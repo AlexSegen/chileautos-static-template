@@ -1,0 +1,32 @@
+/*----------------------------------------------------------------------
+
+	MASTER STYLESHEET
+
+	Project:        GeeksMotion Template
+	Version:        ALPHA 0.4
+	Author:         GeeksMotion
+	Primary use:    Corporate, Business Themes.
+	Email:			contacto@geeksmotion.com
+	Follow: 		http://www.twitter.com/geeksmotion
+	Like: 			http://www.facebook.com/geeksmotion
+	Website:		http://www.geeksmotion.com
+
+-----------------------------------------------------------------------*/
+@import 'plugins/bootstrap',
+        'global/settings',
+        'modules/buttons',
+        'modules/text-theme',
+        'modules/bg-theme',
+        'modules/posts',
+        'modules/spacing',
+        'global/typography',
+        'pages/home',
+        'global/base',
+        'layout/header',
+        'layout/footer',
+        'layout/sidebar',
+        'global/mixins',
+        'global/responsive';
+
+
+
