@@ -26,6 +26,7 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 5. Reestructurar archivos SCSS
 6. Reestrucuurar archivos JS
 7. Eliminar CDN de Bootstrap
+8. Agregar inject: false
 
 
 ###### 010/10/2017

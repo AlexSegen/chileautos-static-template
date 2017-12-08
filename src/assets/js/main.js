@@ -1,1 +1,1 @@
- console.log('Hello from mani.js!');
+ console.log('Hello from main.js!');

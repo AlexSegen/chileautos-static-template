@@ -11,7 +11,7 @@ module.exports = {
 	entry: './src/assets/js/app.js',
 	output: {
 		path: path.resolve(__dirname,'dist'),
-		filename: './assets/js/app.bundle.js'
+		filename: './assets/js/app.js'
 	},
 	module:{
 		rules:[
@@ -62,6 +62,7 @@ module.exports = {
             	title: 'GeeksMotion Template',
             	filename: 'index.html',
             	template: './src/index.html',
+            	inject: false,
             }),
             new HtmlWebpackPlugin({
             	filename: 'page.html',
