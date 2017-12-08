@@ -1,5 +1,5 @@
 // CSS
-//require('../sass/app.scss')
+require('../sass/app.scss')
 
 // JS
 import $ from 'jquery';
