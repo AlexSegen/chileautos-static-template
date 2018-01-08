@@ -1,4 +1,4 @@
-# GeeksMotion Group Template Alpha 0.4
+# GeeksMotion Group Template Alpha 0.5
 Ambiente de desarrollo para diseño de sitios.
 
 ## Webpack 3
@@ -17,6 +17,12 @@ Esta template utiliza Webpack 3 para automatizar procesos.
 Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 #### Changelog
+
+###### 08/01/2018
+1. Agregar archivos css al css-loader
+2. Reconfiguración de HtmlWebpackPlugin para page.html
+3. Reconfiguración de page.html
+4. Fix comandos npm en package.json
 
 ###### 06/12/2017
 1. Agregar url-loader

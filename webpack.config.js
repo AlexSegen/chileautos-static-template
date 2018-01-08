@@ -28,7 +28,7 @@ module.exports = {
 			]
 		},
 		{
-			test:/\.scss$/,
+			test: /\.(scss|css)$/,
 			use: extractPlugin.extract({
 				fallback: 'style-loader',
 				use: ['css-loader','sass-loader'],
@@ -67,6 +67,7 @@ module.exports = {
             new HtmlWebpackPlugin({
             	filename: 'page.html',
             	template: './src/page.html',
+            	inject: false,
             	chuncks:[]
             }),
             new CleanWebpackPlugin(['dist'])
