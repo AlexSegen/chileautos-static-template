@@ -1,9 +1,8 @@
 // CSS
 require('../sass/app.scss')
-
-// JS
+// JS 
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
-require('./bootstrap.min.js')
+require('bootstrap')
 require('./main.js')
