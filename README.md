@@ -25,6 +25,7 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 4. Eliminar jquery.js y bootstrap.min.js de Assets
 5. Eliminar Bootstrap fonts
 6. Optimizar app.js
+7. Fix Webpack Scss/css publicPath
 
 ###### 08/01/2018
 1. Agregar archivos css al css-loader

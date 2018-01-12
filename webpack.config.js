@@ -32,7 +32,7 @@ module.exports = {
 			use: extractPlugin.extract({
 				fallback: 'style-loader',
 				use: ['css-loader','sass-loader'],
-				publicPath: '/dist'
+				publicPath: '/'
 			})
 
 		},
@@ -50,7 +50,7 @@ module.exports = {
 			test:/\.(jpg|png|jpeg|gif|svg)$/,
 			use: [
                     //'file-loader?name=[name].[ext]&outputPath=assets/img/&publicPath=assets/img/',
-                    'file-loader?name=assets/images/[hash:14].[ext]',
+                    'file-loader?name=assets/img/[hash:14].[ext]',
                     'image-webpack-loader'
                     ]
                 }
