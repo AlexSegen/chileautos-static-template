@@ -1,5 +1,5 @@
-# GeeksMotion Group Template Alpha 0.6
-Ambiente de desarrollo para diseño de sitios.
+# GeeksMotion Group Template Alpha 0.6.1
+Ambiente de desarrollo para diseño de sitios estáticos.
 
 ## Webpack 3
 Esta template utiliza Webpack 3 para automatizar procesos.
@@ -17,6 +17,12 @@ Esta template utiliza Webpack 3 para automatizar procesos.
 Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 #### Changelog
+
+###### 08/05/2018
+1. Eliminar Awesome Font Javascript
+2. Eliminar plugins/_bootstrap.scss
+3. Importar Font Awesome desde node_modules en app.js
+4. Importar Bootstrap desde node_modules en app.js
 
 ###### 12/01/2018
 1. Importar bootstrap desde node_modules
