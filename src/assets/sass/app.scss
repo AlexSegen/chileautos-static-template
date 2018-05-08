@@ -3,7 +3,7 @@
         MASTER STYLESHEET
 
         Project:        GeeksMotion Template
-        Version:        ALPHA 0.6
+        Version:        Alpha 0.6.1
         Author:         GeeksMotion
         Primary use:    Corporate, Business Themes.
         Email:                  contacto@geeksmotion.com
@@ -12,9 +12,7 @@
         Website:                http://www.geeksmotion.com
 
 -----------------------------------------------------------------------*/
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css',
-        '../../../node_modules/font-awesome/css/font-awesome.min.css',
-        'global/settings',
+@import 'global/settings',
         'modules/buttons',
         'modules/text-theme',
         'modules/bg-theme',
