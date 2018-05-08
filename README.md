@@ -20,16 +20,10 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 ###### 08/05/2018
 1. Eliminar Awesome Font Javascript
-<<<<<<< HEAD
 2. Eliminar plugins/_bootstrap.scss
 3. Importar Font Awesome desde node_modules en app.js
 4. Importar Bootstrap desde node_modules en app.js
-=======
-2. Optimizar Importar Font Awesome desde node_modules en app.js
-3. Importar Bootstrap desde node_modules en app.js
-6. Optimizar app.js
-7. Fix Webpack Scss/css publicPath
->>>>>>> f161c01784c57aac1b5cb058c2b92bb825819975
+
 
 ###### 12/01/2018
 1. Importar bootstrap desde node_modules
