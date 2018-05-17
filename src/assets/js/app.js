@@ -1,6 +1,7 @@
 // CSS
 require('bootstrap/dist/css/bootstrap.min.css')
 require('font-awesome/css/font-awesome.min.css')
+//require('animate.css/animate.css')
 require('../sass/app.scss')
 // JS 
 import $ from 'jquery';
