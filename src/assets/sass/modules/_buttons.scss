@@ -216,8 +216,8 @@
   }
 
   &-gray {
-    background: #333;
-    border: 1px solid #333;
+    background: #737373;
+    border: 1px solid #737373;
     color: #eee !important;
     &.square {
       -webkit-border-radius:0px;
@@ -250,8 +250,15 @@
 
 }
 
-
-
+.btn-default{
+  &.round {
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    border-radius:25px;
+  }
+}
 /*--------------------------------------
   [DEFAULT BUTTONS]
 --------------------------------------*/
