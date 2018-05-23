@@ -154,21 +154,6 @@
       margin: 10px auto;
       position: relative;
       margin-bottom: 100px;
-      &:hover,
-      &:focus{
-        //cursor: pointer;
-        figure{
-          img{
-            opacity: 1;
-/*             -webkit-filter: grayscale(0%);
-            -moz-filter: grayscale(0%);
-            filter: grayscale(0%); */
-          }
-        }
-        .bank-info{
-          display: block;
-        }
-      }
       figure{
         max-width: 170px;
         margin: 0 auto;
@@ -176,10 +161,6 @@
           max-width:100%;
           height: auto;
           display: block;
-          opacity: .7;
-/*           -webkit-filter: grayscale(80%);
-          -moz-filter: grayscale(80%);
-          filter: grayscale(80%); */
           transition: all ease-in-out .3s;
           -moz-transition: all ease-in-out .3s;
           -webkit-transition: all ease-in-out .3s;
