@@ -56,22 +56,21 @@ a.showMore{
     }
   
 }
-#showMore{
+#hideMore{
+  display: none;
+}
+#hideMore,#showMore{
   text-align: center;
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  transform: rotate(45deg);
-  clear: both;
+    clear: both;
   margin-bottom:-60px !important;
   z-index: 5;
   position: relative;
   padding: 0;
   background: #fff;
   box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.3);
-  .fa{
-    transform: rotate(-45deg);
-  }
   &:focus{
     border: none;
   }

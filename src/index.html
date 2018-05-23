@@ -68,12 +68,12 @@
 				</div>
 				<div class="clearfix"></div>
 				<h2 class="mt-40 text-center">
-					<a href="#!" class="showMore">
 						Otros medios de pago
-					</a>
 				</h2>
 				<div class="text-center">
-					<button class="btn btn-default btn-lg round mb-10 showMore" id="showMore"><i class="fa fa-arrow-circle-down fa-2x"></i></button>	
+					<button class="btn btn-default btn-lg round mb-10 showMore" id="showMore"><i class="fa fa-arrow-circle-down fa-2x"></i></button>
+					<button class="btn btn-default btn-lg round mb-10" id="hideMore"><i class="fa fa-times fa-2x"></i></button>
+
 				</div>
 				<!-- <div class="custom-form	"></div> -->
 			</div>
@@ -146,9 +146,16 @@
 	<script>
 		$( document ).ready(function() {
 			$( ".showMore" ).click(function() {
-				$('.row-banks').addClass('show')
-				//$(this).addClass('btn btn-theme')
-				//$(this).attr('disabled', 'disabled')
+				/* $('.row-banks').addClass('show') */
+				$('.row-banks').show(600)
+				$('#showMore').hide()			 
+				$('#hideMore').show()
+			});
+
+			$( "#hideMore" ).click(function() {
+				$('.row-banks').hide(600)
+				$('#hideMore').hide()
+				$('#showMore').show()
 			});
 		});
 	</script>
