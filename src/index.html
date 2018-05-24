@@ -20,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://www.chileautos.cl/Content/assets/css/chileautos.min.css?v=ba46f746e0c55b24d1d836bf2be9b9ea">
-	<link rel="stylesheet" href="./assets/css/app.css?v=0.003">
+	<link rel="stylesheet" href="./assets/css/app.css?v=0.004">
 	<style>
 	body{
 		font-family: 'Open Sans', sans-serif !important;
@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<section class="payment-section mt-40 mb-40">
+<section class="payment-section mt-40 mb-40" id="start">
 
 	<div class="container">
 		<div class="wrapper-bg">
@@ -67,18 +67,13 @@
 					</div>
 				</div>
 				<div class="clearfix"></div>
-				<h2 class="mt-40 text-center">
+				<h2 class="mt-40 text-center" id="banks">
 						Otros medios de pago
 				</h2>
-				<div class="text-center">
-					<a href="#banks" class="btn btn-default btn-lg round mb-10 showMore" id="showMore"><i class="fa fa-arrow-circle-down fa-2x"></i></a>
-					<button class="btn btn-default btn-lg round mb-10" id="hideMore"><i class="fa fa-times fa-2x"></i></button>
-
-				</div>
 				<!-- <div class="custom-form	"></div> -->
 			</div>
 
-			<div class="row row-banks theme-bg02 animated fadeIn" id="banks">
+			<div class="row row-banks theme-bg02 animated fadeIn">
 				<p class="mt-40 text-center">Tu aviso se activará a partir de las 24 hs. hábiles de enviado el comprobante pago.</p>
 				<div class="col-md-4 animated fadeInUp">
 					<div class="item-bank">
@@ -127,15 +122,19 @@
 				</div>
 
 				<div class="col-md-12 text-center">
-					<div class="alert alert-warning">
-						<p>Por favor envíanos la confirmación del pago por e-mail a <a href="mailto:cobranzas@chileautos.cl">cobranzas@chileautos.cl</a></p>
+					<div class="alert alert-warning mb-40">
+						<p>Por favor envíanos la confirmación del pago por e-mail a <a href="mailto:cobranzas@chileautos.cl">cobranzas@chileautos.cl</a> indicando el código del vehículo <strong>[autocompletar]</strong> y su RUT <strong>[autocompletar]</strong></p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row row-footer theme-bg02">
 				<div class="col-md-12">
-					<p class="mt-40">Consultas o dudas: Llámenos al (+56) 22218 6529 o al (+56) 22219 4417 o escriba a <a href="mailto:info@chileautos.cl">info@chileautos.cl</a></p>
+						<div class="text-center">
+								<a href="#banks" class="btn btn-default btn-lg round  showMore smooth" id="showMore"><i class="fa fa-arrow-circle-down fa-2x"></i></a>
+								<a href="#start"class="btn btn-default btn-lg round  smooth" id="hideMore"><i class="fa fa-arrow-circle-up fa-2x"></i></a>
+						</div>
+					<p class="mt-20">Consultas o dudas: Llámenos al (+56) 22218 6529 o al (+56) 22219 4417 o escriba a <a href="mailto:info@chileautos.cl">info@chileautos.cl</a></p>
 				</div>
 			</div>
 		</div>
@@ -343,7 +342,7 @@
 				/* $('.row-banks').addClass('show') */
 				$('.row-banks').show(600)
 				$('#showMore').hide()			 
-				$('#hideMore').show()
+				$('#hideMore').css("display","inline-block");
 			});
 
 			$( "#hideMore" ).click(function() {
@@ -353,7 +352,7 @@
 			});
 
 			$(function() {
-			$('#showMore').click(function() {
+			$('.smooth').click(function() {
 				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
